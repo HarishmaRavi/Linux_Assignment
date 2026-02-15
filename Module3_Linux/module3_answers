@@ -1,0 +1,18 @@
+harishma@Harishma:~$ mkdir Module3_Linux
+harishma@Harishma:~$ cd Module
+Module1_linux/ Module2_Linux/ Module3_Linux/
+harishma@Harishma:~$ cd Module3_Linux/
+harishma@Harishma:~/Module3_Linux$ vim backup_manager.sh
+harishma@Harishma:~/Module3_Linux$ chmod +x backup_manager.sh
+harishma@Harishma:~/Module3_Linux$ ./backup_manager.sh ^C
+harishma@Harishma:~/Module3_Linux$ vim backup_manager.sh
+harishma@Harishma:~/Module3_Linux$ ./backup_manager.sh "/home/harishma" "/home/harishma/backup" ".txt"
+Files to be backed up:
+----------------------
+assesment.txt - 471 bytes
+large_files.txt - 14 bytes
+
+Starting backup...
+
+Backup completed successfully.
+Report saved at: /home/harishma/backup/backup_report.log

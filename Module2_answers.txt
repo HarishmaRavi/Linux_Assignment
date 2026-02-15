@@ -1,0 +1,44 @@
+harishma@Harishma:~/Module2_Linux/Qn1$ find . -type f -size +1M > large_files.txt
+harishma@Harishma:~/Module2_Linux/Qn1$ cat large_files.txt
+./bigfiles.dat
+
+harishma@Harishma:~/Module2_Linux/Qn1$ cd ..
+harishma@Harishma:~/Module2_Linux$ mkdir Qn2
+harishma@Harishma:~/Module2_Linux$ cd Qn2
+harishma@Harishma:~/Module2_Linux/Qn2$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+harishma@Harishma:~/Module2_Linux/Qn2$ cat config.txt
+server=localhost
+db_host=localhost
+api_url=http://localhost:8080
+harishma@Harishma:~/Module2_Linux/Qn2$ cat updated_config.txt
+server=127.0.0.1
+db_host=127.0.0.1
+api_url=http://127.0.0.1:8080
+
+harishma@Harishma:~/Module2_Linux$ mkdir Qn3
+harishma@Harishma:~/Module2_Linux$ cd Qn3
+harishma@Harishma:~/Module2_Linux/Qn3$ vi log.txharishma@Harishma:~/Module2_Linux/Qn3$ grep "ERROR" log.txt | grep -v "DEBUG" > filtered_log.txt
+harishma@Harishma:~/Module2_Linux/Qn3$ cat filtered_log.txt
+ERROR: Unable to connect to the database.
+ERROR: Failed to fetch data from API endpoint '/users'.
+ERROR: Missing required parameter in the request.
+
+harishma@Harishma:~/Module2_Linux$ mkdir Qn4
+harishma@Harishma:~/Module2_Linux$ cd Qn4
+harishma@Harishma:~/Module2_Linux/Qn4$ ps -eo pid,comm,%mem --sort=-%mem | head
+    PID COMMAND         %MEM
+    253 unattended-upgr  0.5
+     45 systemd-journal  0.4
+    913 vi               0.3
+    189 wsl-pro-service  0.3
+      1 systemd          0.3
+    107 systemd-resolve  0.3
+    390 systemd          0.2
+    183 systemd-logind   0.2
+    108 systemd-timesyn  0.1
+harishma@Harishma:~/Module2_Linux/Qn4$ kill -9 <189>
+
+harishma@Harishma:~/Module2_Linux$ mkdir Qn5
+harishma@Harishma:~/Module2_Linux$ cd Qn5
+harishma@Harishma:~/Module2_Linux/Qn5$ ip route | grep default | sort
+default via 172.19.80.1 dev eth0 proto kernel
