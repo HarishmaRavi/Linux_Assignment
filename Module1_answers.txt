@@ -1,0 +1,85 @@
+harishma@Harishma:~$ cd data
+harishma@Harishma:~/data$ ls
+backup  data.log  hello.txt  text.txt
+harishma@Harishma:~/data$ vi example.txt
+harishma@Harishma:~/data$
+harishma@Harishma:~/data$ CD
+CD: command not found
+harishma@Harishma:~/data$ CD
+CD: command not found
+harishma@Harishma:~/data$ cd
+harishma@Harishma:~$
+harishma@Harishma:~$ mkdir Module1_linux
+harishma@Harishma:~$ cd Module1_linux/
+harishma@Harishma:~/Module1_linux$ mkdir Qn1
+harishma@Harishma:~/Module1_linux$ cd Qn1/
+harishma@Harishma:~/Module1_linux/Qn1$ touch file1
+harishma@Harishma:~/Module1_linux/Qn1$ chmod a+x file1
+harishma@Harishma:~/Module1_linux/Qn1$ ls -l file1
+-rwxr-xr-x 1 harishma harishma 0 Feb  2 04:42 file1
+harishma@Harishma:~/Module1_linux/Qn1$ cd ..
+harishma@Harishma:~/Module1_linux$ mkdir Qn2
+harishma@Harishma:~/Module1_linux$ cd Qn2
+harishma@Harishma:~/Module1_linux/Qn2$ touch file2
+harishma@Harishma:~/Module1_linux/Qn2$ chmod g-w file2
+harishma@Harishma:~/Module1_linux/Qn2$ ls -l file2
+-rw-r--r-- 1 harishma harishma 0 Feb  2 04:43 file2
+harishma@Harishma:~/Module1_linux/Qn2$ cd ..
+harishma@Harishma:~/Module1_linux$ mkdir Qn3
+harishma@Harishma:~/Module1_linux$ cd Qn3
+harishma@Harishma:~/Module1_linux/Qn3$ mkdir -p dir1/dir2
+harishma@Harishma:~/Module1_linux/Qn3$ touch dir1/dir2/file3
+harishma@Harishma:~/Module1_linux/Qn3$ ln -s dir1/dir2/file3 dir1/file3_link
+harishma@Harishma:~/Module1_linux/Qn3$ ls -l dir1
+total 4
+drwxr-xr-x 2 harishma harishma 4096 Feb  2 04:48 dir2
+lrwxrwxrwx 1 harishma harishma   15 Feb  2 04:48 file3_link -> dir1/dir2/file3
+harishma@Harishma:~/Module1_linux/Qn3$ cd ..
+harishma@Harishma:~/Module1_linux$ mkdir Qn4
+harishma@Harishma:~/Module1_linux$ cd Qn4
+harishma@Harishma:~/Module1_linux/Qn4$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 04:32 ?        00:00:00 /sbin/init
+root           2       1  0 04:32 ?        00:00:00 /init
+root           8       2  0 04:32 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          45       1  0 04:32 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          92       1  0 04:32 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     107       1  0 04:32 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     108       1  0 04:32 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         162       1  0 04:32 ?        00:00:00 /usr/sbin/cron -f -P
+message+     163       1  0 04:32 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         183       1  0 04:32 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         189       1  0 04:32 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         202       1  0 04:32 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       205       1  0 04:32 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         213       1  0 04:32 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         253       1  0 04:32 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         343       2  0 04:33 ?        00:00:00 /init
+root         344     343  0 04:33 ?        00:00:00 /init
+harishma     345     344  0 04:33 pts/0    00:00:00 -bash
+root         346       2  0 04:33 pts/1    00:00:00 /bin/login -f
+harishma     390       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd --user
+harishma     391     390  0 04:33 ?        00:00:00 (sd-pam)
+root         406       2  0 04:33 ?        00:00:00 /init
+root         414     406  0 04:33 ?        00:00:00 /init
+harishma     419     346  0 04:33 pts/1    00:00:00 -bash
+harishma     423     414  0 04:33 pts/2    00:00:00 -bash
+harishma     620     423  0 04:50 pts/2    00:00:00 ps -ef
+harishma@Harishma:~/Module1_linux/Qn4$ cd ..
+harishma@Harishma:~/Module1_linux$ mkdir Qn5
+harishma@Harishma:~/Module1_linux$ cd Qn5
+harishma@Harishma:~/Module1_linux/Qn5$ mkdir dir1
+harishma@Harishma:~/Module1_linux/Qn5$ touch dir1/fileA
+harishma@Harishma:~/Module1_linux/Qn5$ sleep 1
+harishma@Harishma:~/Module1_linux/Qn5$ touch dir1/fileB
+harishma@Harishma:~/Module1_linux/Qn5$ sleep 1
+harishma@Harishma:~/Module1_linux/Qn5$  touch dir1/fileC
+harishma@Harishma:~/Module1_linux/Qn5$ ls -lt dir1 > sorted_out.txt
+harishma@Harishma:~/Module1_linux/Qn5$ cat sorted_out.txt
+total 0
+-rw-r--r-- 1 harishma harishma 0 Feb  2 04:52 fileC
+-rw-r--r-- 1 harishma harishma 0 Feb  2 04:51 fileB
+-rw-r--r-- 1 harishma harishma 0 Feb  2 04:51 fileA
+harishma@Harishma:~/Module1_linux/Qn5$ cd ../
+harishma@Harishma:~/Module1_linux$ cd
+harishma@Harishma:~$ vi Module1_answers.txt
