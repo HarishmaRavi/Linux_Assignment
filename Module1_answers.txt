@@ -1,14 +1,3 @@
-harishma@Harishma:~$ cd data
-harishma@Harishma:~/data$ ls
-backup  data.log  hello.txt  text.txt
-harishma@Harishma:~/data$ vi example.txt
-harishma@Harishma:~/data$
-harishma@Harishma:~/data$ CD
-CD: command not found
-harishma@Harishma:~/data$ CD
-CD: command not found
-harishma@Harishma:~/data$ cd
-harishma@Harishma:~$
 harishma@Harishma:~$ mkdir Module1_linux
 harishma@Harishma:~$ cd Module1_linux/
 harishma@Harishma:~/Module1_linux$ mkdir Qn1
@@ -18,6 +7,7 @@ harishma@Harishma:~/Module1_linux/Qn1$ chmod a+x file1
 harishma@Harishma:~/Module1_linux/Qn1$ ls -l file1
 -rwxr-xr-x 1 harishma harishma 0 Feb  2 04:42 file1
 harishma@Harishma:~/Module1_linux/Qn1$ cd ..
+
 harishma@Harishma:~/Module1_linux$ mkdir Qn2
 harishma@Harishma:~/Module1_linux$ cd Qn2
 harishma@Harishma:~/Module1_linux/Qn2$ touch file2
@@ -25,6 +15,7 @@ harishma@Harishma:~/Module1_linux/Qn2$ chmod g-w file2
 harishma@Harishma:~/Module1_linux/Qn2$ ls -l file2
 -rw-r--r-- 1 harishma harishma 0 Feb  2 04:43 file2
 harishma@Harishma:~/Module1_linux/Qn2$ cd ..
+
 harishma@Harishma:~/Module1_linux$ mkdir Qn3
 harishma@Harishma:~/Module1_linux$ cd Qn3
 harishma@Harishma:~/Module1_linux/Qn3$ mkdir -p dir1/dir2
@@ -35,6 +26,7 @@ total 4
 drwxr-xr-x 2 harishma harishma 4096 Feb  2 04:48 dir2
 lrwxrwxrwx 1 harishma harishma   15 Feb  2 04:48 file3_link -> dir1/dir2/file3
 harishma@Harishma:~/Module1_linux/Qn3$ cd ..
+
 harishma@Harishma:~/Module1_linux$ mkdir Qn4
 harishma@Harishma:~/Module1_linux$ cd Qn4
 harishma@Harishma:~/Module1_linux/Qn4$ ps -ef
@@ -66,6 +58,7 @@ harishma     419     346  0 04:33 pts/1    00:00:00 -bash
 harishma     423     414  0 04:33 pts/2    00:00:00 -bash
 harishma     620     423  0 04:50 pts/2    00:00:00 ps -ef
 harishma@Harishma:~/Module1_linux/Qn4$ cd ..
+
 harishma@Harishma:~/Module1_linux$ mkdir Qn5
 harishma@Harishma:~/Module1_linux$ cd Qn5
 harishma@Harishma:~/Module1_linux/Qn5$ mkdir dir1
