@@ -16,3 +16,11 @@ Starting backup...
 
 Backup completed successfully.
 Report saved at: /home/harishma/backup/backup_report.log
+harishma@Harishma:~$ cat /home/harishma/backup/backup_report.log
+Backup Summary Report
+---------------------
+Total files processed : 2
+Total files backed up : 2
+Total size backed up  : 485 bytes
+Backup directory      : /home/harishma/backup
+Backup completed on   : Tue Feb  3 13:23:18 UTC 2026
